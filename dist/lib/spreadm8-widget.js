@@ -1868,7 +1868,7 @@ function He(a, r, e) {
       const [K, ht] = Mt;
       dt[K] = ht;
     }
-    dt.prospect = "", dt.input_spread = R.toString(), dt.prospect_annual_flow = "", dt.email_user = !1, dt.is_widget = !0, l || (dt.user = "testUserWithoutMail@gmail.com"), ut(dt);
+    dt.prospect = "", dt.input_spread = R.toString(), dt.prospect_annual_flow = "", dt.email_user = !1, l || (dt.user = "testUserWithoutMail@gmail.com"), ut(dt);
   }, it = (D) => {
     e(37, o = D.matches);
   }, nt = window.matchMedia("(prefers-color-scheme: dark)");
