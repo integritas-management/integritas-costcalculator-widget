@@ -1833,7 +1833,7 @@ function He(a, r, e) {
       X.message === D ? e(12, B = D) : e(12, B = X.message);
     }
   }
-  const G = async (D) => fetch(`${ie}/calculate`, {
+  const G = async (D) => fetch(`${ie}/widget/calculate`, {
     method: "POST",
     mode: "cors",
     headers: {

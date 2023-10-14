@@ -97,7 +97,7 @@
 
 
     const fetcher = async (data: any) => {
-        return fetch(`${BACKEND_URL}/calculate`, {
+        return fetch(`${BACKEND_URL}/widget/calculate`, {
             method: "POST",
             mode: "cors",
             headers: {
