@@ -169,7 +169,6 @@
         data["input_spread"] = spread.toString();
         data["prospect_annual_flow"] = "";
         data["email_user"] = false;
-        data["is_widget"] = true;
         if (!shouldShowEmail) {
             data["user"] = "testUserWithoutMail@gmail.com"
         }
