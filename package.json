@@ -1,0 +1,36 @@
+{
+  "name": "spreadm8-widget",
+  "description": "A shareable web component for rates calculating with Vite + Svelte",
+  "version": "0.0.0",
+  "type": "module",
+  "module": "dist/lib/spreadm8-widget.js",
+  "main": "dist/lib/spreadm8-widget.umd.js",
+  "scripts": {
+    "start": "npm run dev -s",
+    "dev": "vite --config vite.demo.config.ts",
+    "build": "vite build",
+    "build:demo": "vite build --config vite.demo.config.ts",
+    "preview": "vite preview --config vite.demo.config.ts",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "prepublishOnly": "npm run build -s"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^2.0.2",
+    "@tsconfig/svelte": "^3.0.0",
+    "@types/vanillajs-datepicker": "^1.2.2",
+    "rollup-plugin-copy": "^3.5.0",
+    "svelte": "^3.52.0",
+    "svelte-check": "^3.0.3",
+    "svelte-preprocess": "^5.0.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.4",
+    "vite": "^4.0.4"
+  },
+  "files": [
+    "dist/lib"
+  ],
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "date-input-polyfill": "^2.14.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "date": "2023-09-11",
+"time": "12:12",
+"bought_ccy": "USD",
+"bought_notional": "100000",
+"sold_ccy": "GBP",
+"sold_notional": "124000",
+"prospect": "ABC Limited",
+"input_spread": "0.1",
+"prospect_annual_flow": "1000000",
+"email_user": false,
+"user": "yuriypidlisnyi2020@gmail.com"
+}
