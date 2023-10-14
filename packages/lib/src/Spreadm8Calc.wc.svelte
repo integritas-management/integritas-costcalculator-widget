@@ -7,7 +7,7 @@
     // solution is still smaller than including
     // a whole library like lightpick or flatpickr
 
-    const BACKEND_URL = "http://localhost:8000";
+    const BACKEND_URL = "https://pxfejsfzfmpq5x3l3rbx3hx6du0lxijq.lambda-url.eu-west-2.on.aws";
     const CORS_ERROR_CODE = "CORS_ERROR";
 
     type modeType = "light" | "dark" | "auto";
