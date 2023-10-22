@@ -1817,7 +1817,7 @@ function Fe(a) {
     }
   };
 }
-const ie = "https://pxfejsfzfmpq5x3l3rbx3hx6du0lxijq.lambda-url.eu-west-2.on.aws", Le = "CORS_ERROR";
+const ie = "https://ec2-13-40-87-137.eu-west-2.compute.amazonaws.com", Le = "CORS_ERROR";
 function Ye(a) {
   return a === "dark" ? !0 : a === "light" ? !1 : window.matchMedia("(prefers-color-scheme: dark)").matches;
 }
