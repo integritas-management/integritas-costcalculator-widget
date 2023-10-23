@@ -390,7 +390,7 @@
                 <div class="flex flex-col gap-2">
                     <h1 class="text-2xl">Your Provider </h1>
                     <p class="text-sm">Your exchange rate
-                        was {backendData.data[0].third_party_exchange_rate.toFixed(2)}</p>
+                        was {backendData.data[0].third_party_exchange_rate.toFixed(4)}</p>
 
                     {#if shouldShowInterbankRate}
                         <p class="text-sm">The interbank rate {backendData.data[0].ccy_pair}
@@ -404,7 +404,7 @@
                 </div>
                 <div class="flex flex-col gap-2">
                     <h1 class="text-2xl mt-4">{name}</h1>
-                    <p class="text-sm">Our exchange rate was {backendData.data[0].integritas_rate.toFixed(2)}</p>
+                    <p class="text-sm">Our exchange rate was {backendData.data[0].integritas_rate.toFixed(4)}</p>
                     {#if backendData.data[0].integritas_savings > 50}
                         <p class="text-sm">We would've saved
                             you {backendData.data[0].sold_ccy} {backendData.data[0].integritas_savings.toFixed(2)}</p>
