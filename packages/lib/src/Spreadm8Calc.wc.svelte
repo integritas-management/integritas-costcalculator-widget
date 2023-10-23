@@ -35,6 +35,9 @@
     export let light_mode_border_color = '#D1D5DB';
     export let dark_mode_border_color = '#374151';
 
+    export let light_mode_button_text_color = '#1f2937';
+    export let dark_mode_button_text_color = '#f9fafb';
+
     export let border_radius = '15px';
 
     export let input_border_radius = '5';
@@ -197,6 +200,7 @@
     $: input_background = isDarkMode ? dark_mode_input_background : light_mode_input_background;
     $: input_border_color = isDarkMode ? dark_mode_border_color : light_mode_border_color;
     $: button_color = isDarkMode ? dark_mode_button_color : light_mode_button_color;
+    $: button_text_color = isDarkMode ? dark_mode_button_text_color : light_mode_button_text_color;
     $: input_style = `
     background-color: ${input_background};
     color: ${text_color};
@@ -207,7 +211,7 @@
     $: button_style = `
     width: 100%;
     background-color: ${button_color};
-    color: ${text_color};
+    color: ${button_text_color};
     border-width: 1px;
     border-color: ${input_border_color};
     border-radius: ${input_border_radius}px;
@@ -351,7 +355,7 @@
 
                         {#if !isFetching}
                             <div class="flex flex-col sm:flex-row sm:justify-between sm:gap-12 w-full  items-center justify-center"
-                                 style="{!shouldShowEmail && `height: 10rem`};">
+                            >
                                 <button type="submit"
                                         class="px-6 py-3 mt-6"
                                         style={button_style}>See your charges
@@ -386,11 +390,11 @@
                 <div class="flex flex-col gap-2">
                     <h1 class="text-2xl">Your Provider </h1>
                     <p class="text-sm">Your exchange rate
-                        was {backendData.data[0].third_party_exchange_rate.toFixed(4)}</p>
+                        was {backendData.data[0].third_party_exchange_rate.toFixed(2)}</p>
 
                     {#if shouldShowInterbankRate}
                         <p class="text-sm">The interbank rate {backendData.data[0].ccy_pair}
-                            was {backendData.data[0].mid_market_rate.toFixed(4)}</p>
+                            was {backendData.data[0].mid_market_rate.toFixed(2)}</p>
                     {/if}
 
                     <p class="text-sm">Your provider's markup was {backendData.data[0].third_party_spread}%</p>
@@ -400,10 +404,10 @@
                 </div>
                 <div class="flex flex-col gap-2">
                     <h1 class="text-2xl mt-4">{name}</h1>
-                    <p class="text-sm">Our exchange rate was {backendData.data[0].integritas_rate.toFixed(4)}</p>
+                    <p class="text-sm">Our exchange rate was {backendData.data[0].integritas_rate.toFixed(2)}</p>
                     {#if backendData.data[0].integritas_savings > 50}
                         <p class="text-sm">We would've saved
-                            you {backendData.data[0].sold_ccy} {backendData.data[0].integritas_savings.toFixed(4)}</p>
+                            you {backendData.data[0].sold_ccy} {backendData.data[0].integritas_savings.toFixed(2)}</p>
                     {/if}
                 </div>
             </div>
