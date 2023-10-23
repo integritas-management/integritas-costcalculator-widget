@@ -1419,7 +1419,7 @@ function Ee(a) {
 function Ae(a) {
   let o, e, l, t, r, n, i = (
     /*backendData*/
-    a[8].data[0].third_party_exchange_rate.toFixed(2) + ""
+    a[8].data[0].third_party_exchange_rate.toFixed(4) + ""
   ), u, s, c, f, d, h = (
     /*backendData*/
     a[8].data[0].third_party_spread + ""
@@ -1431,7 +1431,7 @@ function Ae(a) {
     a[8].data[0].third_party_profit + ""
   ), g, _, M, w, T, O, R, L, Z, K = (
     /*backendData*/
-    a[8].data[0].integritas_rate.toFixed(2) + ""
+    a[8].data[0].integritas_rate.toFixed(4) + ""
   ), I, B, q, z, H, et, $, nt, ot, Q = (
     /*shouldShowInterbankRate*/
     a[17] && oe(a)
@@ -1461,7 +1461,7 @@ function Ae(a) {
     p(Y, X) {
       X[0] & /*backendData*/
       256 && i !== (i = /*backendData*/
-      Y[8].data[0].third_party_exchange_rate.toFixed(2) + "") && bt(u, i), /*shouldShowInterbankRate*/
+      Y[8].data[0].third_party_exchange_rate.toFixed(4) + "") && bt(u, i), /*shouldShowInterbankRate*/
       Y[17] ? Q ? Q.p(Y, X) : (Q = oe(Y), Q.c(), Q.m(e, c)) : Q && (Q.d(1), Q = null), X[0] & /*backendData*/
       256 && h !== (h = /*backendData*/
       Y[8].data[0].third_party_spread + "") && bt(y, h), X[0] & /*backendData*/
@@ -1475,7 +1475,7 @@ function Ae(a) {
         Y[5]
       ), X[0] & /*backendData*/
       256 && K !== (K = /*backendData*/
-      Y[8].data[0].integritas_rate.toFixed(2) + "") && bt(I, K), /*backendData*/
+      Y[8].data[0].integritas_rate.toFixed(4) + "") && bt(I, K), /*backendData*/
       Y[8].data[0].integritas_savings > 50 ? J ? J.p(Y, X) : (J = ne(Y), J.c(), J.m(w, null)) : J && (J.d(1), J = null), X[0] & /*button_style*/
       16384 && $ !== ($ = `${/*button_style*/
       Y[14]} margin-bottom: 1.5rem;`) && m(H, "style", $);
