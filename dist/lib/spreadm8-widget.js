@@ -1612,7 +1612,7 @@ function oe(a) {
     a[8].data[0].ccy_pair + ""
   ), t, r, n = (
     /*backendData*/
-    a[8].data[0].mid_market_rate.toFixed(2) + ""
+    a[8].data[0].mid_market_rate.toFixed(4) + ""
   ), i;
   return {
     c() {
@@ -1627,7 +1627,7 @@ function oe(a) {
       256 && l !== (l = /*backendData*/
       u[8].data[0].ccy_pair + "") && bt(t, l), s[0] & /*backendData*/
       256 && n !== (n = /*backendData*/
-      u[8].data[0].mid_market_rate.toFixed(2) + "") && bt(i, n);
+      u[8].data[0].mid_market_rate.toFixed(4) + "") && bt(i, n);
     },
     d(u) {
       u && lt(o);

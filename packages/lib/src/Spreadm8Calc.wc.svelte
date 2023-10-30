@@ -394,7 +394,7 @@
 
                     {#if shouldShowInterbankRate}
                         <p class="text-sm">The interbank rate {backendData.data[0].ccy_pair}
-                            was {backendData.data[0].mid_market_rate.toFixed(2)}</p>
+                            was {backendData.data[0].mid_market_rate.toFixed(4)}</p>
                     {/if}
 
                     <p class="text-sm">Your provider's markup was {backendData.data[0].third_party_spread}%</p>
