@@ -7,7 +7,8 @@
     // solution is still smaller than including
     // a whole library like lightpick or flatpickr
 
-    const BACKEND_URL = "https://api.spreadm8.com";
+    // const BACKEND_URL = "https://api.spreadm8.com";
+    const BACKEND_URL = "http://localhost:8000";
     const CORS_ERROR_CODE = "CORS_ERROR";
 
     type modeType = "light" | "dark" | "auto";
@@ -50,6 +51,8 @@
     export let show_interbank_rate: string = "false";
 
     export let show_email_input: string = "true";
+
+    export let timezone: string = "Europe/London";
 
     export let spread: number = 0;
     // end of props
@@ -172,6 +175,7 @@
         data["input_spread"] = spread.toString();
         data["prospect_annual_flow"] = "";
         data["email_user"] = false;
+        data["timezone"] = timezone;
         if (!shouldShowEmail) {
             data["user"] = "testUserWithoutMail@gmail.com"
         }
@@ -259,6 +263,7 @@
         width: ${width};
 `}>
         {#if isIdle || isFetching}
+
             <form on:submit={handleFormSubmit}>
                 <div class="flex flex-col sm:gap-4">
                     <div class="flex flex-col sm:flex-row sm:justify-around sm:gap-12">
@@ -268,7 +273,7 @@
                                    placeholder="Select date" required style={input_style}/>
                         </div>
                         <div class="w-full">
-                            <label for="time">Select Time</label>
+                            <label for="time">Select Time ({timezone})<!--Then use the calculator (insert in HTML)--></label>
                             <input id="time" type="time" class="w-full rounded-md px-3 py-2 mt-4" name="time"
                                    placeholder="Select Time" required style={input_style}/>
                         </div>
