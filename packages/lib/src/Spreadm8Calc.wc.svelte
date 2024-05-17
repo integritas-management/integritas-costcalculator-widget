@@ -7,7 +7,8 @@
     // solution is still smaller than including
     // a whole library like lightpick or flatpickr
 
-    const BACKEND_URL = "https://api.spreadm8.com";
+    // const BACKEND_URL = "https://api.spreadm8.com";
+    const BACKEND_URL = "http://localhost:8000";
     const CORS_ERROR_CODE = "CORS_ERROR";
 
     type modeType = "light" | "dark" | "auto";
@@ -52,11 +53,13 @@
     export let show_email_input: string = "true";
 
     export let timezone: string = "Europe/London";
+    export let show_timezone: string = "false";
 
     export let spread: number = 0;
     // end of props
 
     $: shouldShowEmail = show_email_input === "true";
+    $: shouldShowTimezone = show_timezone === "true";
     $: shouldShowInterbankRate = show_interbank_rate === "true";
 
 
@@ -271,11 +274,20 @@
                             <input id="date" type="date" class="w-full rounded-md px-3 py-2 mt-4" name="date"
                                    placeholder="Select date" required style={input_style}/>
                         </div>
-                        <div class="w-full">
-                            <label for="time">Select Time ({timezone})</label>
-                            <input id="time" type="time" class="w-full rounded-md px-3 py-2 mt-4" name="time"
-                                   placeholder="Select Time" required style={input_style}/>
-                        </div>
+                        {#if shouldShowTimezone}
+                          <div class="w-full">
+                              <label for="time">Select Time ({timezone})</label>
+                              <input id="time" type="time" class="w-full rounded-md px-3 py-2 mt-4" name="time"
+                                     placeholder="Select Time" required style={input_style}/>
+                          </div>
+                        {/if}
+                        {#if !shouldShowTimezone}
+                          <div class="w-full">
+                              <label for="time">Select Time</label>
+                              <input id="time" type="time" class="w-full rounded-md px-3 py-2 mt-4" name="time"
+                                     placeholder="Select Time" required style={input_style}/>
+                          </div>
+                        {/if}
                     </div>
                     <div class="flex flex-col sm:flex-row sm:justify-between sm:gap-12">
                         <div class="w-full">

@@ -9,6 +9,7 @@
     <spreadm8-calc
             show_email_input="false"
             timezone="Europe/London"
+            show_timezone="false"
             spread=5
     ></spreadm8-calc>
 
