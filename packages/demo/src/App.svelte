@@ -8,6 +8,7 @@
     <div style="width: 100%; height: 530px;">
     <spreadm8-calc
             show_email_input="false"
+            timezone="Europe/London"
             spread=5
     ></spreadm8-calc>
 
