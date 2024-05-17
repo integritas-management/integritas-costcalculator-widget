@@ -1873,7 +1873,7 @@ function Le(l) {
     }
   };
 }
-const ae = "http://localhost:8000", ze = "CORS_ERROR";
+const ae = "https://api.spreadm8.com", ze = "CORS_ERROR";
 function Ye(l) {
   return l === "dark" ? !0 : l === "light" ? !1 : window.matchMedia("(prefers-color-scheme: dark)").matches;
 }
