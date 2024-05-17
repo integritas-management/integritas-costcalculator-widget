@@ -7,8 +7,7 @@
     // solution is still smaller than including
     // a whole library like lightpick or flatpickr
 
-    // const BACKEND_URL = "https://api.spreadm8.com";
-    const BACKEND_URL = "http://localhost:8000";
+    const BACKEND_URL = "https://api.spreadm8.com";
     const CORS_ERROR_CODE = "CORS_ERROR";
 
     type modeType = "light" | "dark" | "auto";
@@ -273,7 +272,7 @@
                                    placeholder="Select date" required style={input_style}/>
                         </div>
                         <div class="w-full">
-                            <label for="time">Select Time ({timezone})<!--Then use the calculator (insert in HTML)--></label>
+                            <label for="time">Select Time ({timezone})</label>
                             <input id="time" type="time" class="w-full rounded-md px-3 py-2 mt-4" name="time"
                                    placeholder="Select Time" required style={input_style}/>
                         </div>
