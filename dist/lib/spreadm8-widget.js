@@ -1442,8 +1442,8 @@ function Te(l) {
   return {
     c() {
       o = b("div"), e = b("div"), a = b("h1"), a.textContent = "Your Provider", t = Z(), r = b("p"), n = B(`Your exchange rate
-                        was `), u = B(i), s = Z(), q && q.c(), c = Z(), d = b("p"), f = B("Your provider's markup was "), _ = B(h), S = B("%"), w = Z(), x = b("p"), T = B(`Your provider
-                        charged `), P = B(R), g = Z(), v = B(j), y = B(` on
+                        was `), u = B(i), s = Z(), q && q.c(), c = Z(), d = b("p"), f = B("Your provider's markup was "), _ = B(h), S = B("%"), w = Z(), x = b("p"), T = B(`Your currency charges
+                        were `), P = B(R), g = Z(), v = B(j), y = B(` on
                         this trade`), D = Z(), k = b("div"), A = b("h1"), E = B(
         /*name*/
         l[5]

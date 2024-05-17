@@ -414,8 +414,8 @@
                     {/if}
 
                     <p class="text-sm">Your provider's markup was {backendData.data[0].third_party_spread}%</p>
-                    <p class="text-sm">Your provider
-                        charged {backendData.data[0].sold_ccy} {backendData.data[0].third_party_profit} on
+                    <p class="text-sm">Your currency charges
+                        were {backendData.data[0].sold_ccy} {backendData.data[0].third_party_profit} on
                         this trade</p>
                 </div>
                 <div class="flex flex-col gap-2">
