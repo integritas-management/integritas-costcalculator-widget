@@ -7,8 +7,7 @@
     // solution is still smaller than including
     // a whole library like lightpick or flatpickr
 
-    // const BACKEND_URL = "https://api.spreadm8.com";
-    const BACKEND_URL = "http://localhost:8000";
+    const BACKEND_URL = "https://api.spreadm8.com";
     const CORS_ERROR_CODE = "CORS_ERROR";
 
     type modeType = "light" | "dark" | "auto";
